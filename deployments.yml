@@ -1,0 +1,56 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: frontend-camels
+  namespace: expertlab
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: frontend-camels
+  template:
+    metadata:
+      labels:
+        app: frontend-camels
+    spec:
+      containers:
+      - name: frontend-camels
+        image: sandropxl/expertlab4-fe
+        ports:
+        - containerPort: 80          
+
+---
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: backend-camels
+  namespace: expertlab
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: backend-camels
+  template:
+    metadata:
+      labels:
+        app: backend-camels
+    spec:
+      containers:
+      - name: backend-camels
+        image: sandropxl/expertlab4-be
+        ports:
+        - containerPort: 3000
+        env:
+          - name: DB_USER
+            value: "sandroehb"
+          - name: DB_PASSWORD
+            value: "szuZSq2dRiHzbRgg"
+          - name: DB_CLUSTER_ADDRESS
+            value: "cluster-web-ii.ygci8c5.mongodb.net"
+          - name: DB_NAME
+            value: "camelCounter-prod"
+          - name: DB_COLLECTION
+            value: "users"
+          - name: PORT
+            value: "3000"
