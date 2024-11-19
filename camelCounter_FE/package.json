@@ -1,0 +1,24 @@
+{
+  "name": "web2-course-project-front-end-sandrobarillapxl",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EHB-MCT/web2-course-project-front-end-SandroBarillaPXL.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EHB-MCT/web2-course-project-front-end-SandroBarillaPXL/issues"
+  },
+  "homepage": "https://github.com/EHB-MCT/web2-course-project-front-end-SandroBarillaPXL#readme",
+  "dependencies": {
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4"
+  }
+}

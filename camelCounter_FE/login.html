@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="scripts/login.js" defer></script>
+    <link rel="icon" href="./assets/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <div class="navbar">
+        <button onclick="window.location.href='home.html'" id="home-button">Camel Calculator</button>
+        <div>
+            <img src="./assets/favicon.png" alt="camel" id="navbar-camel">
+        </div>
+        <div>
+            <button onclick="window.location.href='quiz.html'">Quiz</button>
+            <button onclick="window.location.href='users.html'">Users</button>
+        </div>
+    </div>
+
+    <form id="login-card">
+        <p id="user-label">Enter password for XXX</p>
+
+        <input type="password" id="password" name="password" required>
+
+        <button type="submit" id="submit">Log in</button>
+        <button type="button" onclick="window.location.href='users.html'">Cancel</button>
+    </form>
+
+    <img src="./assets/hello.png" alt="camel" class="camel-picture-left">
+    <img src="./assets/dunes2.png" alt="dune" class="dune-picture">   
+</body>
+</html>

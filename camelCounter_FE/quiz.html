@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="scripts/quiz.js" defer></script>
+    <link rel="icon" href="./assets/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <div class="navbar">
+        <button onclick="window.location.href='home.html'" id="home-button">Camel Calculator</button>
+        <div>
+            <img src="./assets/favicon.png" alt="camel" id="navbar-camel">
+        </div>
+        <div>
+            <button onclick="window.location.href='quiz.html'">Quiz</button>
+            <button onclick="window.location.href='users.html'">Users</button>
+        </div>
+    </div>
+    <div class="card">
+        <h1>Welcome to the Camel Calculator Quiz!</h1>
+        <p>Answer these quirky questions to discover your worth in camels!</p>
+        <p>First choose a username and password. This way, only you can view, edit and delete your profile later if you wish so.</p>
+    </div>
+    
+
+    <form id="quizForm">
+        <!-- Username -->
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <!-- Password -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <!-- Repeat password -->
+        <label for="repeatPassword">Repeat password:</label>
+        <input type="password" id="repeatPassword" name="repeatPassword" required>
+        
+        <div class="divider"></div>
+
+        <!-- Question 1 -->
+        <label>1. How many marshmallows can you fit in your mouth at once?</label>
+        <input type="number" name="q1" min="0" required>
+
+        <!-- Question 2 -->
+        <label>2. On a scale from 1 to 10, how convincing is your dinosaur impression?</label>
+        <input type="number" name="q2" min="1" max="10" required>
+
+        <!-- Question 3 -->
+        <label>3. What's your preferred method of fighting off a zombie apocalypse?</label>
+        <select name="q3" required>
+            <option value="A">Dance-off</option>
+            <option value="B">Pillow Fight</option>
+            <option value="C">Ninja Moves</option>
+        </select>
+
+        <!-- Question 4 -->
+        <label>4. How many times have you successfully parallel parked on the first try?</label>
+        <input type="number" name="q4" min="0" required>
+
+        <!-- Question 5 -->
+        <label>5. Rate your ability to survive on a deserted island using only a spoon:</label>
+        <select name="q5" required>
+            <option value="A">Master Chef</option>
+            <option value="B">Intermediate</option>
+            <option value="C">Spoon Struggler</option>
+        </select>
+
+        <!-- Question 6 -->
+        <label>6. Choose your spirit animal:</label>
+        <select name="q6" required>
+            <option value="A">Disco Llama</option>
+            <option value="B">Hip-Hop Hedgehog</option>
+            <option value="C">Techno Tortoise</option>
+        </select>
+
+        <!-- Question 7 -->
+        <label>7. If you were a superhero, what would be your superpower?</label>
+        <select name="q7" required>
+            <option value="A">Ability to talk to plants</option>
+            <option value="B">Invisibility in front of cats</option>
+            <option value="C">Sock-puppet telekinesis</option>
+        </select>
+
+        <!-- Question 8 -->
+        <label>8. What's your go-to dance move at weddings?</label>
+        <select name="q8" required>
+            <option value="A">The Funky Chicken</option>
+            <option value="B">The Robot</option>
+            <option value="C">The Interpretive Dance of Joy</option>
+        </select>
+
+        <!-- Question 9 -->
+        <label>9. Estimate the number of selfies you take in a day without being caught:</label>
+        <select name="q9" required>
+            <option value="A">0 - I'm camera shy</option>
+            <option value="B">5 - Just the essentials</option>
+            <option value="C">10+ - Selfie game strong!</option>
+        </select>
+
+        <!-- Question 10 -->
+        <label>10. How many consecutive episodes of your favorite TV show can you binge-watch without a bathroom break?</label>
+        <input type="number" name="q10" min="1" required>
+
+        <!-- Question 11 -->
+        <label>11. On a scale from "meh" to "mind-blowing," how good are you at untangling earphones?</label>
+        <select name="q11" required>
+            <option value="A">Meh</option>
+            <option value="B">Okay</option>
+            <option value="C">Mind-blowing</option>
+        </select>
+
+        <!-- Question 12 -->
+        <label>12. If you were a flavor of ice cream, what would you be?</label>
+        <select name="q12" required>
+            <option value="A">Spicy Sriracha Swirl</option>
+            <option value="B">Pickle Paradise</option>
+            <option value="C">Bubblegum Broccoli Blast</option>
+        </select>
+
+        <!-- Question 13 -->
+        <label>13. Describe your karaoke skills:</label>
+        <select name="q13" required>
+            <option value="A">Shower Singer</option>
+            <option value="B">Car Concert Pro</option>
+            <option value="C">Stadium Superstar</option>
+        </select>
+
+        <!-- Question 14 -->
+        <label>14. What's your preferred mode of transportation in a race?</label>
+        <select name="q14" required>
+            <option value="A">Pogo Stick</option>
+            <option value="B">Unicycle</option>
+            <option value="C">Rollerblades with a propeller hat</option>
+        </select>
+
+        <!-- Question 15 -->
+        <label>15. How many days could you survive on a diet of only pizza and chocolate?</label>
+        <input type="number" name="q15" min="1" required>
+
+        <button type="submit">Calculate!</button>
+    </form>
+
+    <img src="./assets/running2.gif" alt="camel" class="camel-picture-left">
+    <img src="./assets/dunes2.png" alt="dune" class="dune-picture">
+    
+</body>
+</html>
