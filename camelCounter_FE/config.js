@@ -1,5 +1,5 @@
 const config = {
-    apiUrl: 'http://backend-svc:3000',
+    apiUrl: 'http://localhost:8080',
 };
 
 export default config;
