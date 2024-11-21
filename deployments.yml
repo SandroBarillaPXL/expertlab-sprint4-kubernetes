@@ -43,13 +43,22 @@ spec:
         - containerPort: 3000
         env:
           - name: DB_USER
-            value: "sandroehb"
+            valueFrom:
+              configMapKeyRef:
+                name: configmap-camels
+                key: database-user
           - name: DB_PASSWORD
-            value: "szuZSq2dRiHzbRgg"
+            valueFrom:
+              secretKeyRef:
+                name: secret-camels
+                key: password
           - name: DB_CLUSTER_ADDRESS
             value: "cluster-web-ii.ygci8c5.mongodb.net"
           - name: DB_NAME
-            value: "camelCounter-prod"
+            valueFrom:
+              configMapKeyRef:
+                name: configmap-camels
+                key: mongo-db
           - name: DB_COLLECTION
             value: "users"
           - name: PORT
