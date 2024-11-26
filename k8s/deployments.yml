@@ -4,7 +4,7 @@ metadata:
   name: frontend-camels
   namespace: expertlab
 spec:
-  replicas: 4
+  replicas: 3
   selector:
     matchLabels:
       app: frontend-camels
@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: frontend-camels
-        image: sandropxl/expertlab4-fe:k8s
+        image: sandropxl/expertlab4-fe
         ports:
         - containerPort: 80          
 
@@ -27,7 +27,7 @@ metadata:
   name: backend-camels
   namespace: expertlab
 spec:
-  replicas: 3
+  replicas: 2
   selector:
     matchLabels:
       app: backend-camels

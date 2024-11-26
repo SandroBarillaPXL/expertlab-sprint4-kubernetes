@@ -14,5 +14,5 @@ spec:
     syncOptions:
     - CreateNamespace=true
     automated:
-      selfHeal: false #true to auto sync live cluster to repo state
+      selfHeal: false #true to auto sync live cluster to repo state, careful with HPA!
       prune: true
