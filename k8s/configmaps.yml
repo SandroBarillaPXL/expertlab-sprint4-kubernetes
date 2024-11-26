@@ -6,3 +6,6 @@ metadata:
 data: 
   database-user: sandroehb
   mongo-db: camelCounter-prod
+  db-address: cluster-web-ii.ygci8c5.mongodb.net
+  db-collection: users
+  port: "3000"

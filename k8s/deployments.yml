@@ -53,13 +53,22 @@ spec:
                 name: secret-camels
                 key: password
           - name: DB_CLUSTER_ADDRESS
-            value: "cluster-web-ii.ygci8c5.mongodb.net"
+            valueFrom:
+              configMapKeyRef:
+                name: configmap-camels
+                key: db-address
           - name: DB_NAME
             valueFrom:
               configMapKeyRef:
                 name: configmap-camels
                 key: mongo-db
           - name: DB_COLLECTION
-            value: "users"
+            valueFrom:
+              configMapKeyRef:
+                name: configmap-camels
+                key: db-collection
           - name: PORT
-            value: "3000"
+            valueFrom:
+              configMapKeyRef:
+                name: configmap-camels
+                key: port
