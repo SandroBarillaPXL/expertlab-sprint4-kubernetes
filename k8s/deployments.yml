@@ -4,7 +4,7 @@ metadata:
   name: frontend-camels
   namespace: expertlab
 spec:
-  replicas: 3
+  replicas: 4
   selector:
     matchLabels:
       app: frontend-camels
@@ -27,7 +27,7 @@ metadata:
   name: backend-camels
   namespace: expertlab
 spec:
-  replicas: 2
+  replicas: 3
   selector:
     matchLabels:
       app: backend-camels
