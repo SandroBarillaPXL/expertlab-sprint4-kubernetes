@@ -1,11 +1,6 @@
 k3d cluster create expertlab -p "8080:80@loadbalancer"
-kubectl apply -f .\k8s\namespace.yml
-kubectl apply -f .\k8s\deployments.yml
-kubectl apply -f .\k8s\services.yml
-kubectl apply -f .\k8s\ingress.yml
-kubectl apply -f .\k8s\configmaps.yml
-kubectl apply -f .\k8s\secrets.yml
-Write-Host "`n`De app is dadelijk bereikbaar op http://localhost:8080" -ForegroundColor Green
+kubectl apply -f ./k8s/
+Write-Host "`n`De app is dadelijk bereikbaar op http://localhost:8080/home.html" -ForegroundColor Green
 
 kubectl create namespace argocd
 kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
