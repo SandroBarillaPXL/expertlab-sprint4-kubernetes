@@ -2,4 +2,4 @@
 **/.env
 docker-compose.yml
 secrets.yml
-gh_pat.txt
+**/gh_pat.txt
