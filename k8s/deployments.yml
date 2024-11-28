@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: frontend-camels
-        image: sandropxl/expertlab4-fe:k8s
+        image: sandropxl/expertlab4-fe
         ports:
         - containerPort: 80          
         resources:
